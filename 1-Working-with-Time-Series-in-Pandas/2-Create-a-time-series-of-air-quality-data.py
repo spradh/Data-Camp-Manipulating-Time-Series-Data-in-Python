@@ -10,9 +10,10 @@ data.date = pd.to_datetime(data.date)
 data.set_index('date', inplace = True)
 
 # Inspect data 
-#print(data.info())
+print(data.info())
 
 # Plot data
 data.plot(subplots = True)
-plt.tight_layout(); plt.show()
+#plt.tight_layout(); 
+plt.show()
 
