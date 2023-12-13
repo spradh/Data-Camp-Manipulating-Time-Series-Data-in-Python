@@ -12,5 +12,5 @@ daily_returns = data.pct_change()
 rolling_annual_returns = daily_returns.rolling(window = '360D').apply(multi_period_return)
 
 # Plot rolling_annual_returns
-rolling_annual_returns.plot()
+rolling_annual_returns.mul(100).plot()
 plt.tight_layout(); plt.show()
