@@ -3,7 +3,7 @@ raw_index = market_cap_series.sum(axis = 1)
 print(raw_index)
 
 # Normalize the aggregate market cap here 
-index = raw_index.div(raw_index.iloc[0])
+index = raw_index.div(raw_index.iloc[0]).mul(100)
 print(index)
 
 # Plot the index here
